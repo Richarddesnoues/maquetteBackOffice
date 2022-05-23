@@ -16,6 +16,7 @@
 
 
 .logo {
+    position: absolute;
     margin-left: 5%;
     margin-top: 15px;
     cursor: pointer;
@@ -25,8 +26,8 @@
 
 .navbar {
     display: flex;
-    justify-content: space-between;
-    font-family: url(../police/Montserrat/Montserrat-VariableFont_wght.ttf);
+    justify-content:end;
+    font-family: 'Montserrat',  sans-serif;
     
     
 }
@@ -48,17 +49,33 @@
     list-style: none;
 }
 
+
+
 .navbar li a {
-    color: black;
     text-decoration: none;
     font-size: 1.3em;
     text-transform: uppercase;
+    color:black; 
 }
+
+
 
 .navbar li:hover{
     transform: scale(1.2);
     transition: all .4s  ease-in-out;
 }
+
+
+.navbar li a:hover{
+    color:#48435c;
+
+} 
+
+.navItem.big{
+    color:#48435c;
+    transform: scale(1.2);
+}
+
 
 /*-----------------------------MENU BURGER--------------------*/
 .hamburger_bloc {
@@ -148,11 +165,11 @@
 }
 
 .titre h1 {
-    font-family: url(../police/Montserrat/Montserrat-Italic-VariableFont_wght.ttf), sans-serif;
+    font-family: 'Monserrat', sans-serif;
 }
 
 .titre p {
-    font-family: url(../police/Nunito_Sans/NunitoSans-Regular.ttf), sans-serif;
+    font-family:'Nunito Sans'  , sans-serif;
 }
 
 /*------------------------------------------------------------fin TITRE-------------------------------------------*/
@@ -249,43 +266,60 @@
 .piroll_design {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    gap:10px;
+    margin-top: -27px;
+    gap:20px;
+    
 }
 
 .piroll h2 {
-    font-family: url(../police/Montserrat/Montserrat-VariableFont_wght.ttf);
+    font-family: 'Monserrat', sans-serif;
 }
 
 .piroll p {
-    font-family: url(../police/Nunito_Sans/);
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.copyright p {
+    color: rgb(188, 188, 188);
+
 }
 
 .hello {
-    font-family: url(../police/Nunito_Sans/);
-    margin-top: -35px;
+    font-family: 'Nunito Sans', sans-serif;
+    margin-top: -59px;
+    color: rgb(188, 188, 188);
 }
 
+.hello p {
+    line-height: 25px;
+}
+
+
+
 .projects_news {
-    font-family: url(../police/Nunito_Sans/);
+    font-family: 'Nunito Sans', sans-serif;
     display:flex;
     width: 200px;
     justify-content: space-between;
-   
+    
+    
+    
+}
+
+.projects_news ul li {
+    line-height: 25px;
+    color: rgb(188, 188, 188);
+    list-style: none;
     
 }
 
 .projects  {
-   height: 100px; 
-  
-   
+    height: 100px; 
+    
+    
 }
 
-.projects_news li {
-    list-style: none;
-    
-    
-}
+
 /*----------------------------------------------TO DO-------------------------------*/
 /*-------------------------------METTRE DE L'ESPACEMENT ENTRE LES LIENS--------------*/
 .projects_news ul {
@@ -297,20 +331,42 @@
 
 .projects_news li a {
     text-decoration: none;
-    color: white;
+    color: rgb(188, 188, 188)
     
+}
+
+
+.projects_news li a:hover {
+    color: white;
+}
+
+
+.projects_news li:hover {
+    transform: scale(1.2);
 }
 
 .reseaux li {
 
     list-style: none;
+    line-height: 25px;
 
 }
 
 .reseaux li a {
     text-decoration: none;
-    color: white;
+    color: rgb(188, 188, 188);
+
 }
+
+.reseaux li a:hover {
+    color: white;
+
+}
+
+.reseaux li:hover {
+    transform: scale(1.2);
+}
+
 
 
 /*------------------------------------------------MEDIA QUERY--------------------------------*/
@@ -345,6 +401,16 @@
 
 
 @media all and (max-width:750px) {
+    .logo {
+        position: absolute;
+        z-index: 1;
+        margin-left: 5%;
+        margin-top: 15px;
+        cursor: pointer;
+    }
+
+
+
     .hamburger_bloc{
         display: block;
         position: absolute;
@@ -407,11 +473,31 @@
     .footer {
         flex-direction: column;
         text-align: center;
-        height: 800px;
+        height: 1000px;
         font-size: 1.3em;
     }
 
     .projects_news {
-        flex-direction: column;
+        
+        flex-direction: flex;
+        font-size: 1.4em;
+        justify-content: space-between;
+        width: 296px; 
+        margin-top: -70px;
     }
+    
+    .projects_news ul li {
+        line-height: 50px;       
+
+    }
+    
+    .reseaux ul li {
+        font-size: 1.4em;
+        line-height: 50px;
+    }
+
+
+
+
+
 }
