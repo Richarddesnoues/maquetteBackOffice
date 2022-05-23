@@ -10,6 +10,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Nunito+Sans&display=swap');
     </style>
+    <link rel="stylesheet" href="../assets/css/pe-icon-7-strokes">
     <link rel="stylesheet"  href="../assets/css/about.css">   
     <title>Document</title>
 </head>
