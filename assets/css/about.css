@@ -299,6 +299,11 @@
     line-height: 24px;
 }
 
+.btn_container {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px ;
+}
 
 .btn {
     height:55px;
@@ -308,12 +313,13 @@
     background-color: rgb(16, 201, 195);
     font-weight: 500;
     font-family:'Monserat', sans-serif ;
+    color: #ffffff;
+    cursor: pointer;
     
     
 }
 
 .btn a {
-    color: #ffffff;
     text-decoration: none;
 }
 

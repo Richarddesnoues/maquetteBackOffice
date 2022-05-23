@@ -72,8 +72,11 @@
                 <p>Let us know what tou're looking for in an agency. We'll take a look and see</p>
                 <p>if thid could be the start of something beautiful.
             </div>
+            <div class="btn_container">
+
+                <button class="btn">let's talk</button></a>
+            </div>
             
-            <button class="btn"><a href="#">let's talk</button></a>
         </div>
     </div>
 
