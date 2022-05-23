@@ -1,0 +1,425 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+}
+.main {
+    min-height: 1000px;
+}
+
+
+.header{
+    grid-column: 1 / span 3;
+    grid-row: 1;
+    height: 100px;
+}
+
+
+.logo {
+    position: absolute;
+    margin-left: 5%;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+
+
+.navbar {
+    display: flex;
+    justify-content:end;
+    font-family: 'Montserrat',  sans-serif;
+    
+    
+}
+
+.nav_item_group {
+    margin-right: 3%;
+    margin-top: 15px;
+    
+}
+
+.nav_item_group ul {
+    display: flex;
+    text-align: center;
+    gap:1em;
+    
+}
+
+.navbar li {
+    list-style: none;
+}
+
+
+
+.navbar li a {
+    text-decoration: none;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    color:black; 
+}
+
+
+
+.navbar li:hover{
+    transform: scale(1.2);
+    transition: all .4s  ease-in-out;
+}
+
+
+.navbar li a:hover{
+    color:#48435c;
+
+} 
+
+.navItem.big{
+    color:#48435c;
+    transform: scale(1.2);
+}
+
+
+/*-----------------------------MENU BURGER--------------------*/
+.hamburger_bloc {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    
+    position: relative;
+    display:none;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    
+
+
+}
+
+
+.hamburger_lines  {
+    
+    width: 50px;
+    height: 6px;
+    background: black;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+    transform: translateY(40px);
+    margin: auto;
+    
+}
+
+.hamburger_lines::before,
+.hamburger_lines::after {
+    content:'';
+    position: absolute;
+    width: 50px;
+    height: 6px;
+    background: black;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+
+
+}
+
+.hamburger_lines::before {
+    transform: translateY(-16px);
+}
+
+.hamburger_lines::after {
+    transform: translateY(16px);
+}
+/***********************ANIMATION DES BARRES************************/
+.hamburger_bloc.open .hamburger_lines {
+    
+    background: transparent;
+
+
+    
+}
+.hamburger_bloc.open .hamburger_lines::before{
+    transform: rotate(45deg) ;
+}
+
+/*.hamburger_bloc.open .hamburger_lines::before {
+    transform: rotate(45deg) translate(35px, -35px);
+}*/
+
+.hamburger_bloc.open .hamburger_lines::after {
+    transform: rotate(-45deg) ;
+}
+
+
+
+/*------------------------------------------------fin header Navbar--------------------------------------------*/
+.titre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:20px;
+    grid-column: 1/ span 3;
+    grid-row:2 ;
+    height: 250px;
+    background-color: #f6f6f6;
+    text-align: center;
+   
+}
+
+.titre h1 {
+    font-family: 'Monserrat', sans-serif;
+}
+
+.titre p {
+    font-family:'Nunito Sans'  , sans-serif;
+}
+
+/*------------------------------------------------------------fin TITRE-------------------------------------------*/
+
+
+
+
+/*---------------------------------------------------FOOTER--------------------------------------------------*/
+
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: aqua;
+    width:100vw;
+    height: 300px;
+    background-color: rgb(20,20,20);
+    color: white;
+    align-items: center;
+}
+
+.piroll_design {
+    display: flex;
+    flex-direction: column;
+    margin-top: -27px;
+    gap:20px;
+    
+}
+
+.piroll h2 {
+    font-family: 'Monserrat', sans-serif;
+}
+
+.piroll p {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.copyright p {
+    color: rgb(188, 188, 188);
+
+}
+
+.hello {
+    font-family: 'Nunito Sans', sans-serif;
+    margin-top: -59px;
+    color: rgb(188, 188, 188);
+}
+
+.hello p {
+    line-height: 25px;
+}
+
+
+
+.projects_news {
+    font-family: 'Nunito Sans', sans-serif;
+    display:flex;
+    width: 200px;
+    justify-content: space-between;
+    
+    
+    
+}
+
+.projects_news ul li {
+    line-height: 25px;
+    color: rgb(188, 188, 188);
+    list-style: none;
+    
+}
+
+.projects  {
+    height: 100px; 
+    
+    
+}
+
+
+/*----------------------------------------------TO DO-------------------------------*/
+/*-------------------------------METTRE DE L'ESPACEMENT ENTRE LES LIENS--------------*/
+.projects_news ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.projects_news li a {
+    text-decoration: none;
+    color: rgb(188, 188, 188)
+    
+}
+
+
+.projects_news li a:hover {
+    color: white;
+}
+
+
+.projects_news li:hover {
+    transform: scale(1.2);
+}
+
+.reseaux li {
+
+    list-style: none;
+    line-height: 25px;
+
+}
+
+.reseaux li a {
+    text-decoration: none;
+    color: rgb(188, 188, 188);
+
+}
+
+.reseaux li a:hover {
+    color: white;
+
+}
+
+.reseaux li:hover {
+    transform: scale(1.2);
+}
+
+
+
+/*------------------------------------------------MEDIA QUERY--------------------------------*/
+
+
+
+
+
+
+
+@media all and (max-width:1200px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+
+
+@media all and (max-width:900px) {
+    .grid {
+        grid-template-columns:  1fr;
+    }
+
+}
+
+@media all and (max-width:750px) {
+    .logo {
+        position: absolute;
+        z-index: 1;
+        margin-left: 5%;
+        margin-top: 15px;
+        cursor: pointer;
+    }
+
+
+
+    .hamburger_bloc{
+        display: block;
+        position: absolute;
+        right:5px;
+        top:0px
+       
+    }
+    
+    .nav_item_group {
+        display: none;
+    }
+    
+    .nav_item_group ul a {
+        color: white;
+
+    }
+    
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        height: 0;
+        width: 100%;
+        transform: translateY(-135%);
+        transition: 0.4s transform ease-in-out;
+        position: absolute;
+        
+    }
+    .nav_item_group ul {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.4em;
+    }
+
+    .nav_menu .open_nav {
+        display: flex;
+        flex-direction: column;
+        background: #48435C;  
+        margin: auto;
+        justify-content: space-around;
+        
+    }
+
+    .open_nav {
+        transform: initial;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around ;
+        background: #48435C;
+        width: 100%;
+        margin-left: 0px;
+        
+
+    }
+
+    
+
+
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        height: 1000px;
+        font-size: 1.3em;
+    }
+
+    .projects_news {
+        
+        flex-direction: flex;
+        font-size: 1.4em;
+        justify-content: space-between;
+        width: 296px; 
+        margin-top: -70px;
+    }
+    
+    .projects_news ul li {
+        line-height: 50px;       
+
+    }
+    
+    .reseaux ul li {
+        font-size: 1.4em;
+        line-height: 50px;
+    }
+
+
+
+
+
+}
