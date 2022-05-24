@@ -11,6 +11,8 @@
 
 header {
     background-color: rgb(255, 255, 255);
+    position: sticky;
+    top:0;
 }
 
 .main {
@@ -99,6 +101,7 @@ form {
 #submit_btn {
     
     border: none;
+    
 }
 
 #name {
@@ -122,6 +125,7 @@ form {
     min-height: 171px;
     padding-left: 20px;
     padding-top: 20px;
+    resize: none;
 }
 
 input::placeholder, textarea::placeholder {
@@ -134,7 +138,20 @@ input::placeholder, textarea::placeholder {
 
 input {
     padding-left: 20px;
+    
 }
+
+input #name:focus,
+input #email:focus,
+input #title:focus,
+input #textarea:focus,
+input #submit_btn:focus {
+    
+   
+    outline-color:rgb(16, 201, 195);
+}
+
+
 
 
 
@@ -146,6 +163,7 @@ input {
     color:  white;
     font-family: "Nunito Sans", sans-serif;
     text-transform: uppercase;
+    cursor: pointer;
 
 }
 
