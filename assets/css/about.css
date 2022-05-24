@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing:border-box;
+   
 }
 .main_grid {
     display: grid;
@@ -19,6 +20,7 @@
     grid-column: 1 / span 3;
     grid-row: 1;
     height: 101px;
+    background-color: rgb(255, 255, 255);
 }
 
 
@@ -499,7 +501,7 @@
         position: absolute;
         z-index: 1;
         margin-left: 5%;
-        margin-top: 15px;
+        margin-top: 30px;
         cursor: pointer;
     }
 
@@ -541,7 +543,7 @@
     .nav_menu .open_nav {
         display: flex;
         flex-direction: column;
-        background: #48435C;  
+        background: rgb(16, 201, 195);  
         margin: auto;
         justify-content: space-around;
         
@@ -553,7 +555,7 @@
         display: flex;
         flex-direction: column;
         justify-content:space-around ;
-        background: #48435C;
+        background:rgb(16, 201, 195);
         width: 100%;
         margin-left: 0px;
         
@@ -568,12 +570,19 @@
         
     }
 
-    /* .banner_icon { 
+     .banner_icon { 
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         height: 400px;
-    }*/
+    }
+
+
+    .time, .star, .heart {
+        width: 209px;
+    }
+
+
 
     .grey_square {
         grid-row: 3;
