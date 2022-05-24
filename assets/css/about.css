@@ -212,6 +212,18 @@
     text-transform: uppercase;
 }
 
+
+.portfolio, .time, .star, .heart  {
+    display: flex;
+    gap:20px;
+}
+
+.number {
+    padding-top: 5px;
+}
+
+
+
 .icon_text {
     font-size: 12px;
     line-height: 30px;
@@ -543,6 +555,32 @@
 
     }
 
+
+    .main_grid {
+        display: grid;
+        grid-template-columns: 1fr ;
+       
+        
+    }
+
+    /* .banner_icon { 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 400px;
+    }*/
+
+    .grey_square {
+        grid-row: 3;
+    }
+
+    .big_about_me {
+        grid-row: 4;
+    }
+
+    .need {
+        grid-row: 5;
+    }
     
 
 

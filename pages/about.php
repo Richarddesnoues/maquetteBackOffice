@@ -16,7 +16,7 @@
 
     <div class="banner_icon">
             <div class="portfolio">
-                <span ></span>
+                <span class="pe-7s-portfolio pe-3x"></span>
                 <div class="number">
                     <p class="chiffre">548</p>
                     <p class="icon_text">projects completed</p>    
@@ -24,7 +24,7 @@
             </div>
     
             <div class="time">
-                <span></span>
+                <span class="pe-7s-clock pe-3x"></span>
                 <div class="number">
                     <p class="chiffre">1465</p>
                     <p class="icon_text">working hours</p>
@@ -32,7 +32,7 @@
             </div>
     
             <div class="star">
-                <span></span>
+                <span class="pe-7s-star pe-3x"></span>
                 <div class="number">
                     <p class="chiffre">612</p>
                     <p class="icon_text">positive feedback</p>
@@ -40,7 +40,7 @@
             </div>
     
             <div class="heart">
-                <span></span>
+                <span class="pe-7s-like pe-3x"></span>
                 <div class="number">
                     <p class="chiffre">735</p>
                     <p class="icon_text">happy clients</p>

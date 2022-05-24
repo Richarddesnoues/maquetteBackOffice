@@ -17,7 +17,7 @@
     <div class="container">
         <header class="header">
             <div class="logo">
-                <a href = "index.php"><img src="../assets/logo/iconHeader.png" width="50px" height="50px" ></a>
+                <a href = "index.php"><img src="../assets/logo/iconHeader.png" width="40px" height="40px" ></a>
             </div>
             <navbar class="navbar">
                 <div class="nav_item_group">
