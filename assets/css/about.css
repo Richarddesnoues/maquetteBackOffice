@@ -18,7 +18,7 @@
 .header{
     grid-column: 1 / span 3;
     grid-row: 1;
-    height: 100px;
+    height: 101px;
 }
 
 
@@ -26,7 +26,7 @@
 .logo {
     position: absolute;
     margin-left: 5%;
-    margin-top: 15px;
+    margin-top: 30px;
     cursor: pointer;
 }
 
@@ -41,15 +41,15 @@
 }
 
 .nav_item_group {
-    margin-right: 3%;
-    margin-top: 15px;
+    margin-right:7%;
+    margin-top: 40px;
     
 }
 
 .nav_item_group ul {
     display: flex;
     text-align: center;
-    gap:1em;
+    gap:1.8em;
     
 }
 
@@ -61,9 +61,10 @@
 
 .navbar li a {
     text-decoration: none;
-    font-size: 1.3em;
+    font-size: 15px;
     text-transform: uppercase;
     color:black; 
+    
 }
 
 
@@ -75,14 +76,11 @@
 
 
 .navbar li a:hover{
-    color:#48435c;
+    color:rgb(16, 201, 195);
 
 } 
 
-.navItem.big{
-    color:#48435c;
-    transform: scale(1.2);
-}
+
 
 
 /*-----------------------------MENU BURGER--------------------*/
@@ -352,7 +350,7 @@
     justify-content: space-around;
     background-color: aqua;
     width:100vw;
-    height: 300px;
+    height: 284px;
     background-color: rgb(20,20,20);
     color: white;
     align-items: center;
@@ -368,10 +366,12 @@
 
 .piroll h2 {
     font-family: 'Monserrat', sans-serif;
+    font-size: 18px;
 }
 
 .piroll p {
     font-family: 'Nunito Sans', sans-serif;
+    font-size: 15px;
 }
 
 .copyright p {
@@ -383,6 +383,7 @@
     font-family: 'Nunito Sans', sans-serif;
     margin-top: -59px;
     color: rgb(188, 188, 188);
+    font-size: 15px;
 }
 
 .hello p {
@@ -396,6 +397,7 @@
     display:flex;
     width: 200px;
     justify-content: space-between;
+    font-size: 15px;
     
     
     
@@ -405,6 +407,7 @@
     line-height: 25px;
     color: rgb(188, 188, 188);
     list-style: none;
+    font-size: 15px;
     
 }
 
@@ -450,6 +453,8 @@
 .reseaux li a {
     text-decoration: none;
     color: rgb(188, 188, 188);
+    font-size: 15px;
+    font-family: 'Nunito Sans', sans-serif;
 
 }
 
